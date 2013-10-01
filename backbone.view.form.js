@@ -1,4 +1,4 @@
-define(['backbone.modelview','underscore'], function(ModelView, undef) {
+define(['backbone.view.model','underscore'], function(ModelView, undef) {
 	var FormView = ModelView.extend({
 
 		initialize: function(options) {

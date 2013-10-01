@@ -8,10 +8,7 @@ require.config({
 		'backbone': 'components/backbone/backbone',
 
 		'jquery.fill': 'components/jquery.fill/jquery.fill',
-		'backbone.modelview': 'components/backbone.modelview/backbone.modelview',
-
-		// the module files go here
-		'backbone.formview': '../backbone.formview/backbone.formview',
+		'backbone.view.model': 'components/backbone.view.model/backbone.view.model',
 
 		// DEMO
 		'demo-main': 'demo',	// the main file for the demo

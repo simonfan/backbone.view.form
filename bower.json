@@ -1,12 +1,12 @@
 {
-  "name": "backbone.formview",
+  "name": "backbone.view.form",
   "version": "0.0.1",
   "dependencies": {
-    "backbone.modelview": "simonfan/backbone.modelview",
     "backbone": "~1.0.0",
     "jquery": "~2.0.3",
     "underscore": "~1.5.1",
-    "requirejs": "~2.1.8"
+    "requirejs": "~2.1.8",
+    "backbone.view.model": "simonfan/backbone.view.model"
   },
-  "main": "backbone.formview.js"
+  "main": "backbone.view.form.js"
 }

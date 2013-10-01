@@ -1,4 +1,4 @@
-define(['../backbone.formview','backbone'], function(FormView, Backbone) {
+define(['../backbone.view.form','backbone'], function(FormView, Backbone) {
 	window.model = new Backbone.Model();
 
 	window.form = new FormView({
@@ -8,12 +8,10 @@ define(['../backbone.formview','backbone'], function(FormView, Backbone) {
 		 * maps the data values to the html selectors
 		 */
 		map: {
-		//	'title': '.title',
-		//	'thumbnail': 'img',
-			'fruit': '.option',
-			'input': '.input-text',
-			'choice': 'input[name="choose-one"]',
-			'check': 'input[name="choose-multiple"]',
+			'.option': 'fruit',
+			'.input-text': 'input',
+			'input[name="choose-one"]': 'choice',
+			'input[name="choose-multiple"]': 'check',
 		},
 		/** 
 		 * method called to get the data hash to be displayed.
