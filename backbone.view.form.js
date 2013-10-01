@@ -7,8 +7,6 @@ define(['backbone.view.model','underscore'], function(ModelView, undef) {
 
 			_.bindAll(this,'_update','mapFormElement');
 
-			var _this = this;
-
 			/**
 			 * Save the 'map name' on the jquery DOM element.
 			 * so that we can retrieve it later when updating the model (through this._update)
@@ -20,7 +18,7 @@ define(['backbone.view.model','underscore'], function(ModelView, undef) {
 		/**
 		 * Associates the form element with the model attribute.
 		 */
-		mapFormElement: function(selector, attrName) {
+		mapFormElement: function(attrName, selector) {
 
 		//	console.log('selector: ' + selector);
 		//	console.log('attrName: ' + attrName);
@@ -57,6 +55,9 @@ define(['backbone.view.model','underscore'], function(ModelView, undef) {
 					return $(check).val();
 				});
 			}
+
+
+			console.log(name);
 
 			return this.model.set(name, value);
 		},
